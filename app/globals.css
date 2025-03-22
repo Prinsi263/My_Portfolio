@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 330 90% 65%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 330 20% 96%;
+    --secondary-foreground: 330 50% 30%;
+    --muted: 330 10% 96.1%;
+    --muted-foreground: 330 10% 40%;
+    --accent: 330 30% 96.1%;
+    --accent-foreground: 330 50% 30%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 330 20% 90%;
+    --input: 330 20% 90%;
+    --ring: 330 90% 65%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 330 80% 65%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 330 30% 15%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 330 30% 15%;
+    --muted-foreground: 330 10% 70%;
+    --accent: 330 30% 15%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 330 30% 20%;
+    --input: 330 30% 20%;
+    --ring: 330 80% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.bg-grid-white\/\[0\.02\] {
+  background-size: 50px 50px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+.dark .bg-grid-white\/\[0\.02\] {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
