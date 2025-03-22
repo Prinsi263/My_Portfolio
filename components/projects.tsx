@@ -19,14 +19,6 @@ const projects = [
     demoLink: "#",
     githubLink: "#",
   },
-  {
-    title: "Personal Finance Tracker",
-    description: "A web application to track personal expenses built during a web development bootcamp.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["Next.js", "TypeScript", "Prisma", "Chart.js"],
-    demoLink: "#",
-    githubLink: "#",
-  },
 ]
 
 export default function Projects() {
