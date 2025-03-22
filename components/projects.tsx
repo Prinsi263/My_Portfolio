@@ -27,22 +27,6 @@ const projects = [
     demoLink: "#",
     githubLink: "#",
   },
-  {
-    title: "Social Media Dashboard",
-    description: "A simple analytics dashboard created as a learning project to practice data visualization.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["React", "D3.js", "Firebase", "Tailwind CSS"],
-    demoLink: "#",
-    githubLink: "#",
-  },
-  {
-    title: "Portfolio Website",
-    description: "This portfolio website built with Next.js and Tailwind CSS to showcase my projects and skills.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    demoLink: "#",
-    githubLink: "#",
-  },
 ]
 
 export default function Projects() {
