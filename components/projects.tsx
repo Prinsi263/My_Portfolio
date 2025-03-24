@@ -11,12 +11,13 @@ import { Github, ExternalLink } from "lucide-react"
 
 const projects = [
   {
-    title: "College Project - E-Learning Platform",
+    title: "College Project - GETMYPASS",
     description:
-      "A simple e-learning platform developed as part of my final year project. Features include course listings and basic user authentication.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["React", "Node.js", "MongoDB", "Express"],
-    demoLink: "#",
+    "A modern event pass management platform built for my final year project. Developed a full-stack web application with features like event listings, online ticket booking, secure user authentication, and barcode-enabled e-passes. The platform ensures seamless event access through one-time scannable QR codes.",
+    image: "/home.png?height=800&width=800",
+    tags: ["Next.js", "Node.js", "MongoDB", "Tailwind Css"],
+    demoLink: "https://get-my-pass.vercel.app/",
+
     githubLink: "#",
   },
 ]
@@ -87,18 +88,7 @@ export default function Projects() {
           ))}
         </div>
 
-        <motion.div
-          className="text-center mt-12"
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.5, delay: 0.6 }}
-        >
-          <Button variant="outline" size="lg" asChild>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              View More Projects
-            </a>
-          </Button>
-        </motion.div>
+     
       </div>
     </section>
   )

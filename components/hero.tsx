@@ -70,9 +70,12 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
         >
-          <Button size="lg" className="group">
-            <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" /> Download Resume
-          </Button>
+        <Button size="lg" asChild className="group">
+  <a href="/Prinsi.CV.pdf" download>
+    <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" /> Download Resume
+  </a>
+</Button>
+
           <Button
             size="lg"
             variant="outline"

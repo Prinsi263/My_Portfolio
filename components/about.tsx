@@ -29,7 +29,7 @@ export default function About() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <Image src="/placeholder.svg?height=800&width=600" alt="Profile" fill className="object-cover" />
+            <Image src="/mypic.jpg?height=800&width=600" alt="Profile" fill className="object-cover" />
           </motion.div>
 
           <motion.div
@@ -38,17 +38,14 @@ export default function About() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.4 }}
           >
-            <h3 className="text-2xl font-semibold">Who am I?</h3>
-            <p className="text-muted-foreground">
-              I am a recent Bachelor of Computer Applications (BCA) graduate with a passion for web development,
-              software engineering, and technology. I have hands-on experience with full-stack development and enjoy
-              building creative, user-friendly applications.
-            </p>
-            <p className="text-muted-foreground">
-              As a fresh graduate, I'm eager to apply my academic knowledge to real-world projects. I'm enthusiastic
-              about learning new technologies and frameworks to enhance my skills and contribute effectively to
-              innovative projects.
-            </p>
+           <h3 className="text-2xl font-semibold">Who am I?</h3>
+<p className="text-muted-foreground">
+  I am a recent Bachelor of Computer Applications (BCA) graduate with a strong interest in web development. While I may not have formal industry experience yet, I am highly motivated and ready to take on real-world challenges.
+</p>
+<p className="text-muted-foreground">
+  I am passionate about learning and continuously improving my skills. I am eager to work on innovative projects, adapt to new technologies, and grow as a developer. I am confident that my dedication and willingness to learn will help me make a valuable contribution wherever I go.
+</p>
+
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
               <div>

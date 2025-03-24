@@ -8,43 +8,30 @@ import { Briefcase, GraduationCap, Award } from "lucide-react"
 
 const experiences = [
   {
-    title: "Web Development Intern",
-    company: "TechSolutions Inc.",
-    period: "Jun 2023 - Aug 2023",
+    title: "Aspiring Web Developer",
+    company: "Open to Opportunities",
+    period: "Currently Learning",
     description:
-      "Assisted in developing responsive web applications. Learned about React and Next.js frameworks. Collaborated with the design team to implement UI components.",
-    type: "work",
+      "As a recent BCA graduate, I am actively learning and building projects to enhance my web development skills. I am passionate about frontend and backend technologies, and I am continuously improving my knowledge in frameworks like React, Next.js, and Node.js. I am eager to apply my skills in real-world projects and collaborate with professional teams.",
+    type: "personal",
+    
   },
   {
     title: "Bachelor of Computer Applications",
-    company: "Delhi University",
-    period: "2020 - 2023",
+    company: "CHIMANBHAI PATEL INSTITUTE  (GUJARAT UNIVERSITY)",
+    period: "2022 - 2025",
     description:
-      "Specialized in Web Technologies and Software Development. Graduated with distinction. Completed capstone project on E-Learning Platform Development.",
+      "Specialized in Web Development. Graduated with distinction. Completed a project on developing 'GETMYPASS' – a website for online event pass booking.",
     type: "education",
   },
+ 
+ 
   {
-    title: "Web Development Bootcamp",
-    company: "Coding Academy",
-    period: "Jan 2023 - Mar 2023",
+    title: " HIGHER SECONDARY SCHOOL(12THCOMMERCE)",
+    company: " K.B VAKIL HIGH SCHOOL, RADHANPUR ,PATAN-38534l",
+    period: "MAR-2022",
     description:
-      "Completed an intensive 3-month bootcamp focused on full-stack web development. Learned modern JavaScript frameworks, database management, and deployment strategies.",
-    type: "education",
-  },
-  {
-    title: "Hackathon Participant",
-    company: "TechFest 2022",
-    period: "Nov 2022",
-    description:
-      "Participated in a 48-hour hackathon focused on creating solutions for educational challenges. Developed a prototype for a student collaboration platform.",
-    type: "award",
-  },
-  {
-    title: "High School",
-    company: "Delhi Public School",
-    period: "2018 - 2020",
-    description:
-      "Completed high school with Computer Science as a major subject. Participated in coding competitions and tech events.",
+      "Completed high school with Commerce as my major subject. Developed an interest in technology and web development during my studies.",
     type: "education",
   },
 ]

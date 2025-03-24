@@ -28,24 +28,24 @@ export default function Header() {
         setIsScrolled(false)
       }
 
-      // Update active section based on scroll position
       const sections = document.querySelectorAll("section[id]")
 
-      // If at the top of the page, set active to home
       if (window.scrollY < 100) {
         setActiveSection("home")
         return
       }
 
       sections.forEach((section) => {
-        const sectionTop = section.offsetTop - 100
-        const sectionHeight = section.offsetHeight
-        const sectionId = section.getAttribute("id") || ""
-
+        const sec = section as HTMLElement
+        const sectionTop = sec.offsetTop - 100
+        const sectionHeight = sec.offsetHeight
+        const sectionId = sec.getAttribute("id") || ""
+      
         if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
           setActiveSection(sectionId)
         }
       })
+      
     }
 
     window.addEventListener("scroll", handleScroll)
@@ -54,13 +54,10 @@ export default function Header() {
 
   const scrollToSection = (href: string) => {
     setMobileMenuOpen(false)
-
-    // Handle home section specially
     if (href === "#home") {
       window.scrollTo({ top: 0, behavior: "smooth" })
       return
     }
-
     const element = document.querySelector(href)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
@@ -100,7 +97,9 @@ export default function Header() {
               <Menu className="h-6 w-6" />
             </Button>
 
-            <Button className="hidden md:inline-flex">Download CV</Button>
+            <Button asChild className="hidden md:inline-flex">
+              <a href="/Prinsi.CV.pdf" download>Download CV</a>
+            </Button>
           </div>
         </div>
       </div>
@@ -123,7 +122,7 @@ export default function Header() {
                   }}
                   className="text-xl font-bold"
                 >
-                  <span className="text-primary">Sarah</span>Johnson
+                  <span className="text-primary">Prinsi</span>Pujara
                 </button>
                 <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(false)}>
                   <X className="h-6 w-6" />
@@ -145,7 +144,9 @@ export default function Header() {
               </nav>
 
               <div className="mt-auto flex justify-center pt-8">
-                <Button onClick={() => setMobileMenuOpen(false)}>Download CV</Button>
+                <Button asChild onClick={() => setMobileMenuOpen(false)}>
+                  <a href="/Prinsi.CV.pdf" download>Download CV</a>
+                </Button>
               </div>
             </div>
           </motion.div>
@@ -154,4 +155,3 @@ export default function Header() {
     </header>
   )
 }
-
